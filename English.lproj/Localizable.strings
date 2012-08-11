@@ -1,0 +1,49 @@
+/* format string for the 14 states */
+S00  = "%@ o’clock";
+S01  = "shortly after %@";
+S02  = "five past %@";
+S03  = "ten past %@";
+S04	 = "quarter past %@";
+S05	 = "twenty past %@";
+S06	 = "twentyfive past %@";
+S07  = "half past %@";
+S08	 = "twentyfive to %@";
+S09	 = "twenty to %@";
+S10	 = "quarter to %@";
+S11  = "ten to %@";
+S12	 = "five to %@";
+S13  = "nearly %@";
+
+/* for every state whether the current or next hour is used in the description */
+S00h = "current";
+S01h = "current";
+S02h = "current";
+S03h = "current";
+S04h = "current";
+S05h = "current";
+S06h = "current";
+S07h = "current";
+S08h = "next";
+S09h = "next";
+S10h = "next";
+S11h = "next";
+S12h = "next";
+S13h = "next";
+
+/* names of hours */
+H00 = "twelve";
+H01 = "one";
+H02 = "two";
+H03 = "three";
+H04 = "four";
+H05 = "five";
+H06 = "six";
+H07 = "seven";
+H08 = "eight";
+H09 = "nine";
+H10 = "ten";
+H11 = "eleven";
+
+/* special descriptions for full hours */
+M00 = "midnight";
+M12 = "noon";
