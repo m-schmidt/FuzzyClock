@@ -49,3 +49,12 @@ M00 = "Mitternacht";
 M01 = "ein Uhr";
 M12 = "Mittag";
 M13 = "ein Uhr";
+
+/* names of days */
+D00 = "Sonntag";
+D01 = "Montag";
+D02 = "Dienstag";
+D03 = "Mittwoch";
+D04 = "Donnerstag";
+D05 = "Freitag";
+D06 = "Samstag";

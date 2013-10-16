@@ -47,3 +47,12 @@ H11 = "eleven";
 /* special descriptions for full hours */
 M00 = "midnight";
 M12 = "noon";
+
+/* names of days */
+D00 = "sunday";
+D01 = "monday";
+D02 = "tuesday";
+D03 = "wednesday";
+D04 = "thursday";
+D05 = "friday";
+D06 = "saturday";

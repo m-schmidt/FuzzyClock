@@ -47,3 +47,12 @@ H11 = "tizenegy";
 /* special descriptions for full hours */
 M00 = "éjfél";
 M12 = "dél";
+
+/* names of days */
+D00 = "vasárnap";
+D01 = "hétfő";
+D02 = "kedd";
+D03 = "szerda";
+D04 = "csütörtök";
+D05 = "péntek";
+D06 = "szombat";
