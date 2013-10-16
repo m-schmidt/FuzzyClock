@@ -1,0 +1,49 @@
+/* format string for the 14 states */
+S00  = "%@ óra";
+S01  = "nem sokkal %@ után";
+S02  = "öt perccel múlt %@";
+S03  = "tíz perccel múlt %@";
+S04	 = "negyed %@";
+S05	 = "húsz perccel múlt %@";
+S06	 = "öt perc múlva fél %@";
+S07  = "fél %@";
+S08	 = "öt perccel múlt fél %@";
+S09	 = "húsz perc múlva %@";
+S10	 = "háromnegyed %@";
+S11  = "tíz perc múlva %@";
+S12	 = "öt perc múlva %@";
+S13  = "rövidesen %@";
+
+/* for every state whether the current or next hour is used in the description */
+S00h = "current";
+S01h = "current";
+S02h = "current";
+S03h = "current";
+S04h = "next";
+S05h = "current";
+S06h = "next";
+S07h = "next";
+S08h = "next";
+S09h = "next";
+S10h = "next";
+S11h = "next";
+S12h = "next";
+S13h = "next";
+
+/* names of hours */
+H00 = "tizenkettő";
+H01 = "egy";
+H02 = "kettő";
+H03 = "három";
+H04 = "négy";
+H05 = "öt";
+H06 = "hat";
+H07 = "hét";
+H08 = "nyolc";
+H09 = "kilenc";
+H10 = "tíz";
+H11 = "tizenegy";
+
+/* special descriptions for full hours */
+M00 = "éjfél";
+M12 = "dél";

@@ -31,6 +31,8 @@
 		4DF6733F15D6FB8A001C4FE3 /* FuzzyClock.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = FuzzyClock.iconset; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* FuzzyClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuzzyClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB899101180EAC24003F82A5 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AB899102180EAC24003F82A5 /* hu */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = hu; path = hu.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				en,
 				English,
 				German,
+				hu,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* FuzzyClock */;
 			projectDirPath = "";
@@ -199,6 +202,7 @@
 			children = (
 				4D8CB4A90A8639FB00099626 /* English */,
 				4D9489480A8B8DDC00DB5508 /* German */,
+				AB899101180EAC24003F82A5 /* hu */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -208,6 +212,7 @@
 			children = (
 				4DF6733A15D6F876001C4FE3 /* English */,
 				4DF6733C15D6F880001C4FE3 /* German */,
+				AB899102180EAC24003F82A5 /* hu */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
