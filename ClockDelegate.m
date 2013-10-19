@@ -13,7 +13,6 @@
 {
     NSCalendarDate *now = [NSCalendarDate calendarDate];
     int hour = [now hourOfDay];
-    int day = [now dayOfWeek];
 
 	NSString *key, *val;
 
@@ -39,15 +38,11 @@
     // Hour description
     key = [NSString stringWithFormat:@"H%02d", hour % 12];
     NSString *hour_name = _I18N (key);
-    
-    // Day
-    key = [NSString stringWithFormat:@"D%02d", day];
-    NSString *day_name = _I18N(key);
-    
+
     // Build fuzzy time description
     NSString *fuzzy_time = [NSString stringWithFormat: format, hour_name];
 
-    return [[NSAttributedString alloc] initWithString: [NSString stringWithFormat:@"%@, %@", day_name, fuzzy_time]
+    return [[NSAttributedString alloc] initWithString: fuzzy_time
                                            attributes: @{NSFontAttributeName: [NSFont systemFontOfSize: 13]}];
 }
 
