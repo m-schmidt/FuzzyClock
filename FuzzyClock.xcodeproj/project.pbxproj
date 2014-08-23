@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D173F8F19A80CB7005FA247 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D173F8E19A80CB7005FA247 /* Images.xcassets */; };
 		4D8CB4AD0A863A0300099626 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D8CB4AC0A863A0300099626 /* Localizable.strings */; };
 		4DAD12590A85D57900DFE212 /* ClockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD12580A85D57900DFE212 /* ClockDelegate.m */; };
 		4DF6733B15D6F876001C4FE3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DF6733915D6F876001C4FE3 /* MainMenu.xib */; };
-		4DF6734015D6FB8A001C4FE3 /* FuzzyClock.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 4DF6733F15D6FB8A001C4FE3 /* FuzzyClock.iconset */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -24,13 +24,13 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* FuzzyClock_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuzzyClock_Prefix.pch; sourceTree = "<group>"; };
+		4D173F8E19A80CB7005FA247 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FuzzyClock/Images.xcassets; sourceTree = "<group>"; };
 		4D8CB4A90A8639FB00099626 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4D9489480A8B8DDC00DB5508 /* German */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; lineEnding = 0; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4DAD12570A85D57900DFE212 /* ClockDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockDelegate.h; sourceTree = "<group>"; };
 		4DAD12580A85D57900DFE212 /* ClockDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockDelegate.m; sourceTree = "<group>"; };
 		4DF6733A15D6F876001C4FE3 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4DF6733C15D6F880001C4FE3 /* German */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = German; path = German.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		4DF6733F15D6FB8A001C4FE3 /* FuzzyClock.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = FuzzyClock.iconset; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* FuzzyClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuzzyClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB899101180EAC24003F82A5 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4DF6733F15D6FB8A001C4FE3 /* FuzzyClock.iconset */,
+				4D173F8E19A80CB7005FA247 /* Images.xcassets */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				4D8CB4AC0A863A0300099626 /* Localizable.strings */,
 				4DF6733915D6F876001C4FE3 /* MainMenu.xib */,
@@ -180,8 +180,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D8CB4AD0A863A0300099626 /* Localizable.strings in Resources */,
+				4D173F8F19A80CB7005FA247 /* Images.xcassets in Resources */,
 				4DF6733B15D6F876001C4FE3 /* MainMenu.xib in Resources */,
-				4DF6734015D6FB8A001C4FE3 /* FuzzyClock.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,9 +228,11 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = FuzzyClock;
 			};
 			name = Debug;
@@ -238,9 +240,11 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = FuzzyClock;
 			};
 			name = Release;

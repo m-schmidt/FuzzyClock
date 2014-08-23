@@ -12,20 +12,24 @@
 	<dict>
 		<key>47884664-1759-4EFD-A11A-56770010907A</key>
 		<string>https://github.com/m-schmidt/FuzzyClock.git</string>
+		<key>EFFC72E98C70BB6C16202D3052099D787492A0FF</key>
+		<string>https://github.com/m-schmidt/FuzzyClock.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FuzzyClock.xcodeproj/project.xcworkspace</string>
+	<string>FuzzyClock.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>47884664-1759-4EFD-A11A-56770010907A</key>
+		<string>../../../FuzzyClock</string>
+		<key>EFFC72E98C70BB6C16202D3052099D787492A0FF</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/m-schmidt/FuzzyClock.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>47884664-1759-4EFD-A11A-56770010907A</string>
+	<string>EFFC72E98C70BB6C16202D3052099D787492A0FF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>47884664-1759-4EFD-A11A-56770010907A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>FuzzyClock</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EFFC72E98C70BB6C16202D3052099D787492A0FF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FuzzyClock.git</string>
 		</dict>
 	</array>
 </dict>
