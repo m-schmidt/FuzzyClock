@@ -12,7 +12,7 @@ static unsigned componentFlags = NSCalendarUnitHour | NSCalendarUnitMinute | NSC
 
 - (NSDate *)currentDate {
 
-    // Fixed of iPhone introduction for screenshots
+    // Fixed date of iPhone introduction for screenshots:
     // return [NSDate dateWithTimeIntervalSinceReferenceDate:190024881.000000];
     return [NSDate date];
 }
