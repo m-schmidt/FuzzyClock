@@ -1,0 +1,58 @@
+/* format string for the 14 states */
+S00  = "%@ en punto";
+S01  = "%@ y pico";
+S02  = "%@ y cinco";
+S03  = "%@ y diez";
+S04	 = "%@ y cuarto";
+S05	 = "%@ y veinte";
+S06	 = "%@ y veinticinco";
+S07  = "%@ y media";
+S08	 = "%@ menos veinticinco";
+S09	 = "%@ menos veinte";
+S10	 = "%@ menos cuarto";
+S11  = "%@ menos diez";
+S12	 = "%@ menos cinco";
+S13  = "casi %@";
+
+/* for every state whether the current or next hour is used in the description */
+S00h = "current";
+S01h = "current";
+S02h = "current";
+S03h = "current";
+S04h = "current";
+S05h = "current";
+S06h = "current";
+S07h = "current";
+S08h = "next";
+S09h = "next";
+S10h = "next";
+S11h = "next";
+S12h = "next";
+S13h = "next";
+
+/* names of hours */
+H00 = "las doce";
+H01 = "la una";
+H02 = "las dos";
+H03 = "las tres";
+H04 = "las cuatro";
+H05 = "las cinco";
+H06 = "las seis";
+H07 = "las siete";
+H08 = "las ocho";
+H09 = "las nueve";
+H10 = "las diez";
+H11 = "las once";
+
+/* special descriptions for full hours */
+M00 = "medianoche";
+M12 = "mediodía";
+
+/* names of days */
+D00 = "domingo";
+D01 = "lunes";
+D02 = "martes";
+D03 = "miércoles";
+D04 = "jueves";
+D05 = "viernes";
+D06 = "sábado";
