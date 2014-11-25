@@ -2,7 +2,7 @@
 S00  = "%@";
 S01  = "lite över %@";
 S02  = "fem över %@";
-S03  = "tio över%@";
+S03  = "tio över %@";
 S04	 = "kvart över %@";
 S05	 = "tjugo över %@";
 S06	 = "fem i halv %@";
