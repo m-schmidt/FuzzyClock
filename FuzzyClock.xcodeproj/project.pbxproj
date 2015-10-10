@@ -137,7 +137,7 @@
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
 				8D1107290486CEB800E47090 /* Resources */,
-				4D27F1D61BC938B6001522D4 /* ShellScript */,
+				4D27F1D61BC938B6001522D4 /* Update Build Number */,
 				OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */,
 			);
 			buildRules = (
@@ -197,13 +197,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4D27F1D61BC938B6001522D4 /* ShellScript */ = {
+		4D27F1D61BC938B6001522D4 /* Update Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Update Build Number";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
