@@ -23,7 +23,7 @@ static unsigned componentFlags = NSCalendarUnitHour | NSCalendarUnitMinute | NSC
     NSDateComponents *now = [[NSCalendar autoupdatingCurrentCalendar] components:componentFlags fromDate:[self currentDate]];
     NSString *key, *val;
 
-    int hour = [now hour];
+    int hour = (int)[now hour];
 
     // Some hours have a special name
     if ([now minute] == 0) {
@@ -64,7 +64,7 @@ static unsigned componentFlags = NSCalendarUnitHour | NSCalendarUnitMinute | NSC
     NSDateComponents *now = [[NSCalendar autoupdatingCurrentCalendar] components:componentFlags fromDate:[self currentDate]];
 
     // Compute the current 30 seconds step of the current hour
-    int step = [now minute] * 2 + [now second] / 30;
+    int step = (int)[now minute] * 2 + (int)[now second] / 30;
     int nextState;
     
     if (step < 2) {
