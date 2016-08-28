@@ -23,10 +23,10 @@ static unsigned componentFlags = NSCalendarUnitHour | NSCalendarUnitMinute | NSC
     NSDateComponents *now = [[NSCalendar autoupdatingCurrentCalendar] components:componentFlags fromDate:[self currentDate]];
     NSString *key, *val;
 
-    int hour = (int)[now hour];
+    int hour = (int)now.hour;
 
     // Some hours have a special name
-    if ([now minute] == 0) {
+    if (now.minute == 0) {
 
         key = [NSString stringWithFormat:@"M%02d", hour % 24];
 	    val = _I18N (key);
@@ -64,7 +64,7 @@ static unsigned componentFlags = NSCalendarUnitHour | NSCalendarUnitMinute | NSC
     NSDateComponents *now = [[NSCalendar autoupdatingCurrentCalendar] components:componentFlags fromDate:[self currentDate]];
 
     // Compute the current 30 seconds step of the current hour
-    int step = (int)[now minute] * 2 + (int)[now second] / 30;
+    int step = (int)now.minute * 2 + (int)now.second / 30;
     int nextState;
     
     if (step < 2) {
@@ -89,14 +89,14 @@ static unsigned componentFlags = NSCalendarUnitHour | NSCalendarUnitMinute | NSC
     }
 
     // Add the current hour to the state
-    nextState += [now hour] * 100;
+    nextState += now.hour * 100;
     
 
     // Update if needed
     if (state != nextState) {
 
         state = nextState;
-        [clockItem setAttributedTitle: [self currentTitleWithAttributes: @{NSFontAttributeName: [NSFont systemFontOfSize: 13]}]];
+        clockItem.attributedTitle = [self currentTitleWithAttributes: @{NSFontAttributeName: [NSFont systemFontOfSize: 13]}];
     }
 }
 
@@ -106,13 +106,13 @@ static unsigned componentFlags = NSCalendarUnitHour | NSCalendarUnitMinute | NSC
     NSDate *now = [self currentDate];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     
-    [dateFormatter setDateStyle:NSDateFormatterFullStyle];
-    [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
-    [dateItem setTitle:[dateFormatter stringFromDate:now]];
+    dateFormatter.dateStyle = NSDateFormatterFullStyle;
+    dateFormatter.timeStyle = NSDateFormatterNoStyle;
+    dateItem.title = [dateFormatter stringFromDate:now];
     
-    [dateFormatter setDateStyle:NSDateFormatterNoStyle];
-    [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
-    [timeItem setTitle:[dateFormatter stringFromDate:now]];
+    dateFormatter.dateStyle = NSDateFormatterNoStyle;
+    dateFormatter.timeStyle = NSDateFormatterMediumStyle;
+    timeItem.title = [dateFormatter stringFromDate:now];
 }
 
 
@@ -123,9 +123,9 @@ static unsigned componentFlags = NSCalendarUnitHour | NSCalendarUnitMinute | NSC
     
     clockItem = [bar statusItemWithLength:NSVariableStatusItemLength];
     
-    [clockItem setTitle:@" "];
+    clockItem.title = @" ";
     [clockItem setHighlightMode:YES];
-    [clockItem setMenu:clockMenu];
+    clockItem.menu = clockMenu;
     [clockItem setHighlightMode:YES];
     
     state = -1;
