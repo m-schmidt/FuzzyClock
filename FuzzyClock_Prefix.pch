@@ -1,8 +1,0 @@
-// FuzzyClock
-//
-// Copyright Michael Schmidt. All rights reserved.
-
-#import <Cocoa/Cocoa.h>
-
-// Internationalization
-#define _I18N(string) NSLocalizedString((string),nil)
