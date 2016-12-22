@@ -134,7 +134,3 @@ class ClockDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         clockTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in self.clockTick() }
     }
 }
-
-
-
-
