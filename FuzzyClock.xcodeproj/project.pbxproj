@@ -27,6 +27,7 @@
 		4D1FF9E61E0C401B005E261E /* ClockDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockDelegate.swift; sourceTree = "<group>"; };
 		4D8CB4A90A8639FB00099626 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4D9489480A8B8DDC00DB5508 /* German */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; lineEnding = 0; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4DDB901E1F489DB60094ACE6 /* FuzzyClock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = FuzzyClock.entitlements; path = FuzzyClock/FuzzyClock.entitlements; sourceTree = "<group>"; };
 		4DF6733A15D6F876001C4FE3 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4DF6733C15D6F880001C4FE3 /* German */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = German; path = German.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4DDB901E1F489DB60094ACE6 /* FuzzyClock.entitlements */,
 				4D173F8E19A80CB7005FA247 /* Images.xcassets */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				4D8CB4AC0A863A0300099626 /* Localizable.strings */,
@@ -147,8 +149,11 @@
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
-							com.apple.Sandbox = {
+							com.apple.ApplicationGroups.Mac = {
 								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
 							};
 						};
 					};
@@ -264,6 +269,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = FuzzyClock/FuzzyClock.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = V3YNQKY4J7;
@@ -282,6 +288,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = FuzzyClock/FuzzyClock.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = V3YNQKY4J7;

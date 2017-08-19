@@ -129,6 +129,7 @@ class ClockDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         clockItem?.highlightMode = true
         clockItem?.autosaveName = NSStatusItem.AutosaveName(rawValue: "me.mschmidt.FuzzyClock")
         clockItem?.behavior = [ NSStatusItem.Behavior.removalAllowed, NSStatusItem.Behavior.terminationOnRemoval ]
+        clockItem?.isVisible = true
 
         // Install timer for clock updates
         clockTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in self.clockTick() }
