@@ -34,7 +34,7 @@ class ClockDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     func currentAttributedTitle() -> NSAttributedString {
 
         let now = Calendar.autoupdatingCurrent.dateComponents([.hour, .minute, .second], from: NSDate() as Date)
-        let attributes = [ NSFontAttributeName: NSFont.systemFont(ofSize: 13) ]
+        let attributes = [ NSAttributedStringKey.font: NSFont.systemFont(ofSize: 13) ]
 
         // Some special hours may have a predefined title string like e.g. "midnight"
         if now.minute == 0 {
@@ -122,13 +122,13 @@ class ClockDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     func applicationWillFinishLaunching(_ aNotification: Notification) {
 
         // Create the status bar item
-        let bar = NSStatusBar.system()
-        clockItem = bar.statusItem(withLength: NSVariableStatusItemLength)
+        let bar = NSStatusBar.system
+        clockItem = bar.statusItem(withLength: NSStatusItem.variableLength)
         clockItem?.title = " "
         clockItem?.menu = clockMenu
         clockItem?.highlightMode = true
-        clockItem?.autosaveName = "me.mschmidt.FuzzyClock"
-        clockItem?.behavior = [ .removalAllowed, .terminationOnRemoval ]
+        clockItem?.autosaveName = NSStatusItem.AutosaveName(rawValue: "me.mschmidt.FuzzyClock")
+        clockItem?.behavior = [ NSStatusItem.Behavior.removalAllowed, NSStatusItem.Behavior.terminationOnRemoval ]
 
         // Install timer for clock updates
         clockTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in self.clockTick() }
