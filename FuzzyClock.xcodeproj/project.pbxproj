@@ -25,11 +25,11 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		4D173F8E19A80CB7005FA247 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FuzzyClock/Images.xcassets; sourceTree = "<group>"; };
 		4D1FF9E61E0C401B005E261E /* ClockDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockDelegate.swift; sourceTree = "<group>"; };
-		4D8CB4A90A8639FB00099626 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; lineEnding = 0; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4D9489480A8B8DDC00DB5508 /* German */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; lineEnding = 0; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4D2CC635224AB4CC00EFD5B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4D2CC637224AB4D000EFD5B0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4D2CC638224AB4D000EFD5B0 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4D2CC639224AB4D400EFD5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4DDB901E1F489DB60094ACE6 /* FuzzyClock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = FuzzyClock.entitlements; path = FuzzyClock/FuzzyClock.entitlements; sourceTree = "<group>"; };
-		4DF6733A15D6F876001C4FE3 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		4DF6733C15D6F880001C4FE3 /* German */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = German; path = German.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* FuzzyClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuzzyClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB899101180EAC24003F82A5 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 				TargetAttributes = {
 					8D1107260486CEB800E47090 = {
 						DevelopmentTeam = V3YNQKY4J7;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
@@ -161,15 +161,15 @@
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FuzzyClock" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
-				English,
-				German,
 				hu,
 				sv,
 				es,
+				de,
+				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* FuzzyClock */;
 			projectDirPath = "";
@@ -239,11 +239,11 @@
 		4D8CB4AC0A863A0300099626 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4D8CB4A90A8639FB00099626 /* English */,
-				4D9489480A8B8DDC00DB5508 /* German */,
 				AB899101180EAC24003F82A5 /* hu */,
 				2369809F1934BFCB001338AE /* sv */,
 				0767B37F19FA573B00CE3EE2 /* es */,
+				4D2CC635224AB4CC00EFD5B0 /* en */,
+				4D2CC637224AB4D000EFD5B0 /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -251,11 +251,11 @@
 		4DF6733915D6F876001C4FE3 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4DF6733A15D6F876001C4FE3 /* English */,
-				4DF6733C15D6F880001C4FE3 /* German */,
 				AB899102180EAC24003F82A5 /* hu */,
 				236980A01934BFCC001338AE /* sv */,
 				0767B38019FA573B00CE3EE2 /* es */,
+				4D2CC638224AB4D000EFD5B0 /* de */,
+				4D2CC639224AB4D400EFD5B0 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -278,7 +278,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = me.mschmidt.FuzzyClock;
 				PRODUCT_NAME = FuzzyClock;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -297,7 +297,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = me.mschmidt.FuzzyClock;
 				PRODUCT_NAME = FuzzyClock;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

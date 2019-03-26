@@ -34,7 +34,7 @@ class ClockDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     func currentAttributedTitle() -> NSAttributedString {
 
         let now = Calendar.autoupdatingCurrent.dateComponents([.hour, .minute, .second], from: NSDate() as Date)
-        let attributes = [ NSAttributedStringKey.font: NSFont.systemFont(ofSize: 13) ]
+        let attributes = [ NSAttributedString.Key.font: NSFont.systemFont(ofSize: 13) ]
 
         // Some special hours may have a predefined title string like e.g. "midnight"
         if now.minute == 0 {
@@ -127,7 +127,7 @@ class ClockDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         clockItem?.title = " "
         clockItem?.menu = clockMenu
         clockItem?.highlightMode = true
-        clockItem?.autosaveName = NSStatusItem.AutosaveName(rawValue: "me.mschmidt.FuzzyClock")
+        clockItem?.autosaveName = "me.mschmidt.FuzzyClock"
         clockItem?.behavior = [ NSStatusItem.Behavior.removalAllowed, NSStatusItem.Behavior.terminationOnRemoval ]
         clockItem?.isVisible = true
 
